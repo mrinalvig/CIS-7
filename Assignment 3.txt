@@ -21,8 +21,31 @@ Chapter 1.1 Review Questions
       else
       	statement2
       end
-38. (A ^ B)’ ^ C = not A and not B and C. Yes, this does what we want because it prints out statement 1 due to both A and B being false while C is true.
-61. Percival is a truthteller. If he was a liar, then his statement "At least one of us is a liar" would contradict itself. If both Percival and Llewellyn are liars, then Percival is speaking the truth with his statement, therefore he can't be the liar. If only Percival is a liar but Llewellyn is the truth teller, then again Percival's statement is the truth, therefore Percival is not a liar. Finally, since we have established that Percival cannot be lying, and he states that one of them is a liar, then that means Llewellyn has to be a liar due to Percival's true statement. 
-62. Both Merlin and Meredith are truthtellers. If Merlin is a liar, then his statement "If I am a truthteller, then Meredith is a truthteller" is a false statement, implying that both Merlin and Meredith are liars. If Merlin is a truthteller, then his statement is a true statement, implying that both Merlin and Meredith are truthtellers. However, if Merlin is a liar, then the "then" part of his statement is a lie, implying that if Merlin is a truthteller, then Meredith is the opposite. From this we can infer that both Merlin and Meredith are truthtellers. 
-63. Both Rothwold and Grymlin are truthtellers. If Rothwold is a liar, then his statement "Either I am a liar of Grymlin is a truthteller" is false. However, since the statement can't be true and false at the same time, we can assume that Rothwold is a truthteller. Since Rothwold is a truthteller, he is speaking truth when saying that Grymlin is a truthteller. 
-64. Both Gwendolyn and Merrilaine are Liars. If Gwendolyn is a truthteller, then the statement "I am a liar but Merrilaine is not" can't be true, since Gwendolyn can't be a liar. However, if Gwendolyn is a liar, then although part of his statement says he is a liar, which is the truth, he is still lying about the part where Merrilaine is not. Therefore, Gwendolyn is a liar, and is lying about Merrilaine not being a liar, implying that Merrilaine is a liar as well. 
+
+38. (A ^ B)’ ^ C = not A and not B and C. Yes, this does what we want because 
+    it prints out statement 1 due to both A and B being false while C is true.
+
+61. Percival is a truthteller. If he was a liar, then his statement "At least one of us is a liar" 
+    would contradict itself. If both Percival and Llewellyn are liars, then Percival is speaking the 
+    truth with his statement, therefore he can't be the liar. If only Percival is a liar but Llewellyn 
+    is the truth teller, then again Percival's statement is the truth, therefore Percival is not a liar. 
+    Finally, since we have established that Percival cannot be lying, and he states that one of them is a 
+    liar, then that means Llewellyn has to be a liar due to Percival's true statement. 
+
+62. Both Merlin and Meredith are truthtellers. If Merlin is a liar, then his statement 
+    "If I am a truthteller, then Meredith is a truthteller" is a false statement, implying 
+    that both Merlin and Meredith are liars. If Merlin is a truthteller, then his statement is a true 
+    statement, implying that both Merlin and Meredith are truthtellers. However, if Merlin is a liar, then 
+    the "then" part of his statement is a lie, implying that if Merlin is a truthteller, then Meredith is 
+    the opposite. From this we can infer that both Merlin and Meredith are truthtellers. 
+
+63. Both Rothwold and Grymlin are truthtellers. If Rothwold is a liar, then his statement "Either I am a 
+    liar of Grymlin is a truthteller" is false. However, since the statement can't be true and false at the 
+    same time, we can assume that Rothwold is a truthteller. Since Rothwold is a truthteller, he is speaking 
+    truth when saying that Grymlin is a truthteller. 
+
+64. Both Gwendolyn and Merrilaine are Liars. If Gwendolyn is a truthteller, then the statement 
+    "I am a liar but Merrilaine is not" can't be true, since Gwendolyn can't be a liar. However, if Gwendolyn 
+    is a liar, then although part of his statement says he is a liar, which is the truth, he is still lying about 
+    the part where Merrilaine is not. Therefore, Gwendolyn is a liar, and is lying about Merrilaine not being a 
+    liar, implying that Merrilaine is a liar as well. 
