@@ -1,0 +1,15 @@
+Assignment 4
+
+1. p->q <=> q'->p'
+    p' v q <=> q'->p' Imp
+    p' v q <=> q v p' Imp
+    p' v q <=> p' v q Comm
+
+2. (p->r) ^ (q->r) <=> (p v q) -> r
+    (p' v r) ^ (q' v r) <=> (p v r)' v r    imp x3
+    (p' v r) ^ (q' v r) <=> (p' ^ q') v r    deMor
+    (p' v r) ^ (q' v r) <=> (p' v r) ^ (q' v r)   dist
+    
+Make up questions
+1. (p v r') <=> (r' -> p') 
+2. ((r ^~q) -> ~p) <=> (r -> (p -> q))
