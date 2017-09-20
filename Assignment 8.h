@@ -14,15 +14,20 @@ int main()
 	int guess;
 	cin >> guess;
 	
-	int count = 0;
-	
-	while (count < num)
+	for(int i = 2; i <= num; i++)
 	{
-		if(count % 2 != 0)
+		bool check = true;
+		for(int n = 2; n <= i - 1; n++)
 		{
-			prime.push_back(count);
+			if(i % n == 0)
+			{
+				check = false;
+			}
 		}
-		count++;
+		if (check)
+		{
+			prime.push_back(i);
+		}
 	}
 	
 	if(guess == prime.size())
@@ -36,11 +41,9 @@ int main()
 	
 	cout << "Here are all the prime numbers" << endl;
 	
-	for (int i = 0; i <= prime.size(); i++)
+	for (int i = 0; i < prime.size(); i++)
 	{
-	    auto something = prime.back();
-	    prime.pop_back();
-		cout << something << endl;
+		cout << prime[i] << endl;
 	}
 	
 
