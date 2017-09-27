@@ -11,6 +11,7 @@ int main()
 
     factors (num);
    
+    return 0;
 }
 
 void factors (int num)
