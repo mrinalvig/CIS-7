@@ -1,46 +1,69 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
-void move(int, int[], int[], int[]);
-void display(int, int[], int[], int[]);
+void movement(int, vector<int>, vector<int>, vector<int>);
 
 int main()
 {
-    cout << "Welcome to Towers of Hanoi, please enter a positive integer between 1 and 100" << endl;
-    int num;
-    cin >> num;
-    
-    if(num < 1 || num > 100)
-    {
-        cout << "This is an invalid input, please try again." << endl;
-        cin num;
-    }
-    
-    int begin[num], end[num], aux[num];
-    
-    for (int i = num; i > 0; i--) {
-        start[i] = i;
-        end[i] = 0;
-        aux[i] = 0;
-    }
-    
+	vector<int> startT, endT, auxT;
 
-    return 0;
+	cout << "Please enter a positive integer between 1 and 100" << endl;
+	int num;
+	cin >> num;
+
+	if (num < 1 || num > 100)
+	{
+		cout << "This is an invalid input, please try again." << endl;
+		cin >> num;
+	}
+
+	for (int i = num; i > 0; i--)
+	{
+		startT.push_back(i);
+	}
+
+	movement(num, startT, endT, auxT);
+
+	return 0;
 }
 
-void move(int n, int s[n],int e[n],int a[n]) {
-    
-    a[n] = s[n];
-    s[n] = 0;
-}
+void movement(int i, vector<int> first, vector<int> second, vector<int> third)
+{
+	if (i == 1)
+	{
+		second.push_back(first.back());
+		first.pop_back();
 
-void display(int n, int s[n], int e[n], int a[n]) {
-    
-    cout << "A: ";
-    for (int i = discNum; i > 0; i--) {
-        if (i == 0) { cout << "_ "; }
-        else { cout << i << " "; }
-    }
-}
+		cout << "\nA: ";
 
+		while (first.size() > 0)
+		{
+			cout << first.back() << " ";
+			first.pop_back();
+		}
+
+		cout << "\nB: ";
+		while (second.size() > 0)
+		{
+			cout << second.back() << " ";
+			second.pop_back();
+		}
+
+		cout << "\nC: ";
+		while (third.size() > 0)
+		{
+			cout << third.back() << " ";
+			third.pop_back();
+		}
+
+		cout << "\n_____________" << endl;
+	}
+	else
+	{
+		movement(i - 1, first, third, second);
+		second.push_back(first.front());
+		first.pop_back();
+		movement(i - 1, second, first, third);
+	}
+}
