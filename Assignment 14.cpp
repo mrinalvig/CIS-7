@@ -5,6 +5,7 @@ using namespace std;
 
 int factorial(int);
 int fibonacci(int);
+void print(int);
 
 stack <string> call;
 
@@ -25,25 +26,11 @@ int main()
         if (decision == 1)
         {
             cout << "The Factorial of " << num << " = " << factorial(num) << endl;
-            
-            while(!call.empty()) 
-            { 
-                cout << call.top() << " "; 
-                call.pop(); 
-            } 
-            
             loop = false;
         }
         else if (decision == 2)
         {
             cout << "The Fibonacci series at the " << num << "the number is: " << fibonacci(num) << endl;
-            
-            while(!call.empty()) 
-            { 
-                cout << call.top() << " "; 
-                call.pop(); 
-            } 
-            
             loop = false;
         }
         else
@@ -60,6 +47,7 @@ int main()
 int factorial(int num)
 {
     call.push(to_string(num));
+    print(num);
     
     int fact = 1;
     
@@ -77,6 +65,7 @@ int factorial(int num)
 int fibonacci(int num)
 {
     call.push(to_string(num));
+    print(num);
     
     int result = 1;
     
@@ -89,4 +78,13 @@ int fibonacci(int num)
         return fibonacci(num-1) + fibonacci(num-2);
     }
     
+}
+
+void print(int num)
+{
+    while(!call.empty()) 
+    { 
+        cout << "num = " << call.top() << " " << endl; 
+        call.pop(); 
+    } 
 }
