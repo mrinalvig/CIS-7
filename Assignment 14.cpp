@@ -3,15 +3,14 @@
 #include <stack>
 using namespace std;
 
-int factorial(int);
-int fibonacci(int);
-void print(int);
-
-stack <string> call;
+int factorial(int, stack<int>);
+int fibonacci(int, int, stack<int>);
+void print(stack<int>);
 
 int main()
 {
     bool loop = true;
+    stack <int> call;
     
     cout<<"Please select a positive integer" << endl;
     int num;
@@ -25,12 +24,12 @@ int main()
     {
         if (decision == 1)
         {
-            cout << "The Factorial of " << num << " = " << factorial(num) << endl;
+            cout << "\nThe Factorial of " << num << " = " << factorial(num, call) << endl;
             loop = false;
         }
         else if (decision == 2)
         {
-            cout << "The Fibonacci series at the " << num << "the number is: " << fibonacci(num) << endl;
+            cout << "\nThe Fibonacci series at number " << num << " is: " << fibonacci(num, num, call) << endl;
             loop = false;
         }
         else
@@ -44,47 +43,68 @@ int main()
     return 0;
 }
 
-int factorial(int num)
+int factorial(int num, stack<int> call)
 {
-    call.push(to_string(num));
-    print(num);
+    call.push(num);
+    print(call);
     
     int fact = 1;
     
     if (num <= 1)
     {
+		print(call);
+		call.pop();
         return 1;
     }
     else
     {
-        fact = num * factorial(num-1);
+        fact = num * factorial(num-1, call);
+		print(call);
         return fact;
     }
 }
 
-int fibonacci(int num)
+int fibonacci(int num1, int num2, stack<int> call)
 {
-    call.push(to_string(num));
-    print(num);
+    call.push(num1);
+    
+    cout << "calling f(" << call.top() << ") from f(" << num2 << ")" << endl;
     
     int result = 1;
     
-    if (num <= 2)
+    if (num1 <= 2)
     {
       return 1;
     }
     else
     {
-        return fibonacci(num-1) + fibonacci(num-2);
+		result = (fibonacci(num1-1, num1, call) + fibonacci(num1-2, num1, call)); 
+        return result;
     }
+	
     
 }
 
-void print(int num)
+void print(stack<int> call)
 {
+	int num = call.top();
+    cout << "___________" << endl;
+	
+    while (call.size() > 0) 
+	{
+        cout << "n = " << call.top() << endl;
+        call.pop();
+    }
+    for (int i = num; num > 0; num--) 
+	{
+        call.push(i);
+    }
+	
+	/*
     while(!call.empty()) 
     { 
         cout << "num = " << call.top() << " " << endl; 
         call.pop(); 
     } 
+	*/
 }
