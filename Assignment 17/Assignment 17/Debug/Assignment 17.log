@@ -1,0 +1,45 @@
+﻿  Main.cpp
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(10): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(10): error C2146: syntax error: missing ';' before identifier 'functions'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): error C2228: left of '.vertex' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): error C2228: left of '.edge' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): error C2228: left of '.highestDegreeDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): error C2228: left of '.verticesDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): error C2228: left of '.loopsDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): error C2228: left of '.connectedDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(9): error C2084: function 'int main(void)' already has a body
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(8): note: see previous definition of 'main'
+  functions.cpp
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(10): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(10): error C2146: syntax error: missing ';' before identifier 'functions'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): error C2228: left of '.vertex' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(33): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): error C2228: left of '.edge' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(38): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): error C2228: left of '.highestDegreeDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(43): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): error C2228: left of '.verticesDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(44): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): error C2228: left of '.loopsDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(45): note: type is 'unknown-type'
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): error C2065: 'functions': undeclared identifier
+c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): error C2228: left of '.connectedDisplay' must have class/struct/union
+  c:\users\user\documents\assignments\cis-7\assignment 17\assignment 17\main.cpp(46): note: type is 'unknown-type'
+  Generating Code...
